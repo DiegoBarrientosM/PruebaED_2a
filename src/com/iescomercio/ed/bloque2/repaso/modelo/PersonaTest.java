@@ -12,8 +12,11 @@ import org.junit.jupiter.api.Test;
 class PersonaTest {
 
 	@Test
-	void testPersona() {
-		fail("Not yet implemented");
+	void testPersona(String dni, String nombre, String apellido) {
+		Persona p = new Persona ("1111F","Diego","Barrientos");
+		assertEquals("1111F", p.getDni());
+		assertEquals("Diego", p.getNombre());
+		assertEquals("Barrientos", p.getApellido1());
 	}
 
 	@Test
