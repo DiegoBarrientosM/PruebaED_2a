@@ -2,15 +2,11 @@ package com.iescomercio.ed.bloque2.repaso.modelo;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class PersonaTest {
-
-	@BeforeEach
-	void setUp() throws Exception {
-		Persona p = new Persona ("1111","Diego","Barrientos");
-	}
 
 	@Test
 	void testPersona() {
@@ -19,7 +15,8 @@ class PersonaTest {
 
 	@Test
 	void testGetDni() {
-		assertEquals("1111", Persona.getDni());
+		Persona p = new Persona ("1111","Diego","Barrientos");
+		assertEquals("1111", p.getDni());
 	}
 
 	@Test
