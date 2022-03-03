@@ -33,7 +33,8 @@ class CursoTest {
 
 	@Test
 	void testEstaRegistrado() {
-		fail("Not yet implemented");
+		c.aniadirAlumno(p);
+		assertTrue(c.estaRegistrado(p.getDni()));
 	}
 
 	@Test
