@@ -27,7 +27,8 @@ class CursoTest {
 
 	@Test
 	void testAniadirAlumno() {
-		fail("Not yet implemented");
+		c.aniadirAlumno(p);
+		assertTrue(c.estaRegistrado(p.getDni()));
 	}
 
 	@Test
