@@ -27,13 +27,13 @@ class CursoTest {
 
 	@Test
 	void testAniadirAlumno() {
-		c.aniadirAlumno(p);
+		
 		assertTrue(c.estaRegistrado(p.getDni()));
 	}
 
 	@Test
 	void testEstaRegistrado() {
-		c.aniadirAlumno(p);
+		
 		assertTrue(c.estaRegistrado(p.getDni()));
 	}
 
@@ -45,7 +45,7 @@ class CursoTest {
 
 	@Test
 	void testNumeroAlumnos() {
-		fail("Not yet implemented");
+		assertEquals(1, c.numeroAlumnos());
 	}
 
 }
